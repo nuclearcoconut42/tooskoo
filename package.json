@@ -2,7 +2,14 @@
   "name": "tooskoo",
   "version": "0.0.1",
   "description": "A work managing app for teachers, students and parents.",
-  "scripts": {},
+  "scripts": {
+    "start": "node ./bin/www",
+    "vendor": "gulp vendor",
+    "sass": "gulp sass",
+    "gulp": "npm run vendor && npm run sass && gulp",
+    "postinstall": "typings install",
+    "typings": "typings"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nuclearcoconut42/tooskoo.git"
@@ -26,6 +33,7 @@
     "angular2-in-memory-web-api": "0.0.17",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
+    "cookie-parser": "^1.4.3",
     "core-js": "^2.4.0",
     "debug": "^2.2.0",
     "es6-shim": "^0.35.1",
