@@ -14,14 +14,16 @@ passport.use new LocalStrategy
       where: email: email
     .then (user) ->
       if !user
-        return done null, false
+        return done null, false,
           message: 'Incorrect email.'
       if !bcrypt.compareSync password, user,password
-        return done null, false
+        return done null, false,
           message: 'Incorrect password.'
       return done(null, user)
 
-app.post '/local' passport.authenticate 'local'
-    successRedirect: '/'
-    failureRedirect: '/login'
-    failureFlash: true
+router.post '/local', passport.authenticate 'local',
+  successRedirect: '/'
+  failureRedirect: '/login'
+  failureFlash: true
+
+module.exports = router

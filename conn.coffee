@@ -5,4 +5,4 @@ module.exports = new Sequelize 'postgres://ebrock:secret@localhost:5432/tooskoo'
   .then (err) ->
     console.log 'Connection has been established successfully.'
   .catch (err) ->
-    console.err 'Unable to connect to the database:' err
+    console.log 'Unable to connect to the database:', err

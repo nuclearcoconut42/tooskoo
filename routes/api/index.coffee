@@ -1,7 +1,8 @@
-{Router} = require 'express'
-
+express = require 'express'
 loginRoutes = require './login'
 
-router.use '/login' loginRoutes
+app = express()
 
-module.exports = router
+app.use '/login', loginRoutes
+
+module.exports = app
