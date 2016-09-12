@@ -19,6 +19,7 @@
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
+    "coffee-react": "^5.0.0",
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "express": "^4.14.0",
@@ -27,9 +28,14 @@
     "minimatch": "^3.0.3",
     "pg": "^6.1.0",
     "pg-hstore": "^2.3.2",
+    "react": "^15.3.1",
+    "react-burger-menu": "^1.10.4",
+    "react-dom": "^15.3.1",
     "sequelize": "^3.24.1",
     "sequelize-cli": "^2.4.0",
-    "serve-favicon": "^2.3.0",
-    "systemjs": "0.19.27"
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
   }
 }
