@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "A work managing app for teachers, students and parents.",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,6 @@
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
-    "coffee-react": "^5.0.0",
     "coffee-script": "^1.10.0",
     "debug": "^2.2.0",
     "express": "^4.14.0",
