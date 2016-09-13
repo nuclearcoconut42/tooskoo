@@ -1,10 +1,7 @@
-{createElement, createClass} = require 'react'
+# The base element of your app. Can be a router if you like.
+
+{createElement} = require 'react'
 {render} = require 'react-dom'
+root = require './components/root'
 
-HelloWorld = createClass
-  render: ->
-    createElement 'header', null, createElement 'h1', null, 'Hello World!'
-
-mainElement = document.querySelector 'main'
-
-render createElement(HelloWorld), mainElement
+render root, document.getElementById 'app'
