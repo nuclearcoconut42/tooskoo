@@ -9,12 +9,8 @@ RootComponent = createClass
     return(
       div
         id: "root"
-        menu
-          id: page
-        page
-          id: menu
-          pageWrapId: "page"
-          outerContainerId: "root"
+        menu null
+        page null
     )
 
 module.exports = createElement(RootComponent)

@@ -1,6 +1,6 @@
 {createClass, createElement, createFactory, DOM} = require 'react'
 {a, img} = DOM
-Menu = createFactory require('react-burger-menu').slide
+Menu = createFactory require('react-burger-menu').stack
 
 MenuComponent = createClass
   render: ->

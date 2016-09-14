@@ -21446,13 +21446,7 @@
 	  render: function() {
 	    return div({
 	      id: "root"
-	    }, menu({
-	      id: page
-	    }), page({
-	      id: menu,
-	      pageWrapId: "page",
-	      outerContainerId: "root"
-	    }));
+	    }, menu(null), page(null));
 	  }
 	});
 
@@ -21469,7 +21463,7 @@
 
 	a = DOM.a, img = DOM.img;
 
-	Menu = createFactory(__webpack_require__(175).slide);
+	Menu = createFactory(__webpack_require__(175).stack);
 
 	MenuComponent = createClass({
 	  render: function() {
